@@ -1,0 +1,20 @@
+# IDE
+.vs/
+.vscode/*
+!.vscode/launch.json
+.cache/
+.idea/
+*.suo
+*.sln
+*.vcxproj
+*.vcxproj.*
+
+# output directory
+build/
+out/
+__pycache__/
+
+# precompiled headers
+*.ipch
+*.gch
+*.pch
