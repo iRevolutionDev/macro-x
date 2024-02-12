@@ -1,13 +1,13 @@
 #include <Sirius/main.hpp>
 
-#include "application.hpp"
+#include "Sirius/application.hpp"
 #include "gui.hpp"
 
 Sirius::window* Sirius::create_window(int, char**)
 {
     const auto current_window = new window(
         window_info{
-            .title = "Basic App",
+            .title = "Macro X",
             .width = 800,
             .height = 600
         }
