@@ -2,6 +2,7 @@
 
 #include "Sirius/application.hpp"
 #include "gui.hpp"
+#include "file_manager.hpp"
 
 Sirius::window* Sirius::create_window(int, char**)
 {
@@ -14,6 +15,10 @@ Sirius::window* Sirius::create_window(int, char**)
     );
 
     const auto app = new application();
+
+    std::filesystem::path base_dir = std::getenv("appdata");
+    base_dir /= "MacroX";
+    g_file_manager.init(base_dir);
 
     app->push_layer<gui>();
 
